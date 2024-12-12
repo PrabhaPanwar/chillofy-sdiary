@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Digital Diary</h1>
+      <p>Write your thoughts, ideas, and reflections here!</p>
+    </header>
+
+    <main>
+      <section class="entry-form">
+        <h2>New Entry</h2>
+        <form id="diaryForm">
+          <label for="entryTitle">Title:</label>
+          <input type="text" id="entryTitle" name="entryTitle" required>
+
+          <label for="entryContent">Your Thoughts:</label>
+          <textarea id="entryContent" name="entryContent" rows="6" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit">Save Entry</button>
+            <button type="button" id="clearForm">Clear Form</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="entries">
+        <h2>Diary Entries</h2>
+        <div id="entryList">
+          <!-- Entries will appear here -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>Made with love, Chillofy Diary <3</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
